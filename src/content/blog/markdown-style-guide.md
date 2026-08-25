@@ -190,7 +190,7 @@ we can use 3 backticks ``` in new line and write snippet and close with 3 backti
 ### Syntax
 
 ```markdown
-<abbr title="Graphics Interchange Format">GIF</abbr> is a bitmap image format.
+<BasicLinkbbr title="Graphics Interchange Format">GIF</abbr> is a bitmap image format.
 
 H<sub>2</sub>O
 
@@ -203,7 +203,7 @@ Most <mark>salamanders</mark> are nocturnal, and hunt for insects, worms, and ot
 
 ### Output
 
-<abbr title="Graphics Interchange Format">GIF</abbr> is a bitmap image format.
+<BasicLinkbbr title="Graphics Interchange Format">GIF</abbr> is a bitmap image format.
 
 H<sub>2</sub>O
 
