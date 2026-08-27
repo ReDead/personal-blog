@@ -90,22 +90,30 @@ const posts = (await getCollection('projects')).sort(
 	<body>
 		<Header />
 		<main>
+			<h1>Projects</h1>
+			<p>
+				Here you will find posts about my projects, vehicles, and anything I'm working on. This also includes some posts about my regular vehicles which I wouldn't consider "projects" necessarily.
+			</p>
 			<section>
 				<ul>
 					{
-						posts.map((post) => (
-							<li>
-								<BasicLink href={`/projects/${post.id}/`}>
-									{post.data.heroImage && (
-										<Image width={720} height={360} src={post.data.heroImage} alt="" />
-									)}
-									<h4 class="title">{post.data.title}</h4>
-									<p class="date">
-										<FormattedDate date={post.data.pubDate} />
-									</p>
-								</BasicLink>
-							</li>
-						))
+						posts.length > 0 ? (
+							posts.map((post) => (
+								<li>
+									<BasicLink href={`/projects/${post.id}/`}>
+										{post.data.heroImage && (
+											<Image width={720} height={360} src={post.data.heroImage} alt="" />
+										)}
+										<h4 class="title">{post.data.title}</h4>
+										<p class="date">
+											<FormattedDate date={post.data.pubDate} />
+										</p>
+									</BasicLink>
+								</li>
+							))
+						) : (
+							<li>No posts yet</li>
+						)
 					}
 				</ul>
 			</section>

@@ -90,22 +90,30 @@ const posts = (await getCollection('adventures')).sort(
 	<body>
 		<Header />
 		<main>
+			<h1>Adventures</h1>
+			<p>
+				Here you will find posts about any cool adventures, rides, trips, or events I've participated in. This is sort of a loose category, but you can probably expect to mostly see ride reports and trips.
+			</p>
 			<section>
 				<ul>
 					{
-						posts.map((post) => (
-							<li>
-								<BasicLink href={`/adventures/${post.id}/`}>
-									{post.data.heroImage && (
-										<Image width={720} height={360} src={post.data.heroImage} alt="" />
-									)}
-									<h4 class="title">{post.data.title}</h4>
-									<p class="date">
-										<FormattedDate date={post.data.pubDate} />
-									</p>
-								</BasicLink>
-							</li>
-						))
+						posts.length > 0 ? (
+							posts.map((post) => (
+								<li>
+									<BasicLink href={`/adventures/${post.id}/`}>
+										{post.data.heroImage && (
+											<Image width={720} height={360} src={post.data.heroImage} alt="" />
+										)}
+										<h4 class="title">{post.data.title}</h4>
+										<p class="date">
+											<FormattedDate date={post.data.pubDate} />
+										</p>
+									</BasicLink>
+								</li>
+							))
+						) : (
+							<li>No posts yet</li>
+						)
 					}
 				</ul>
 			</section>
