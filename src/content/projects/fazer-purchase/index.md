@@ -14,7 +14,6 @@ Like I said, it's a 2007 Yamaha FZ1. These bikes were also called the Yamaha "Fa
 Another unique thing about these bikes is the fairings. The Fazer would be considered a <abbr title="A style of bike derived from a sport bike but with no fairings and a more upright seating position">naked bike</abbr> due to it's upright seating position, usage of bars instead of clip-ons, and lack of traditional fairings. However, most modern naked bikes have no fairings. The Fazer has what I call "half-fairings". I have also heard them called "bikini fairings". This is not something you see on any modern bikes. It is sort of a relic of the early 2000s with bikes like the Yamaha Fazer, Suzuki SV, and Suzuki Bandit all having it.
 
 ![FZ1 and R1](./fz1-vs-r1.png)
-
 *A FZ1 and R1 next to each other. Note the difference in the side and bottom fairings.*
 
 ## My Fazer
